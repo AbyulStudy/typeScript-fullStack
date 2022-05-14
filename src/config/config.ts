@@ -4,7 +4,7 @@ config();
 export const Config = {
   server: {
     host: process.env.SERVER_HOST,
-    port: Number(process.env.SERVER_PORT),
+    port: Number(process.env.PORT),
     mode: process.env.SERVER_MODE,
     mode_description: process.env.SERVER_MODE_DESC,
     swagger: process.env.SWAGGER,

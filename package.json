@@ -12,7 +12,11 @@
     "type": "git",
     "url": "git+https://github.com/AbyulStudy/typeScript-fullStack.git"
   },
-  "author": "",
+  "author": "devbyul",
+  "engines": {
+    "node": "16.15.0",
+    "npm": "8.5.5"
+  },
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/AbyulStudy/typeScript-fullStack/issues"

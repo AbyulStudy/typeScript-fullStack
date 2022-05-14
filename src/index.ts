@@ -1,7 +1,12 @@
 import app from "./config/express";
 
-const port = Number(process.env.APP_PORT) || 3001;
+const PORT = Number(process.env.PORT) || 3000;
 
-app.listen(port, "0.0.0.0", async () => {
-  console.log(`Server listening on port : ${port}`);
+const server = app.listen(PORT, "0.0.0.0", async () => {
+  // @ts-ignore
+  const host = server.address().address;
+  // @ts-ignore
+  const port = server.address().port;
+  const protocol = port === 80 ? "http://" : "https://";
+  console.log(`Server listening at ${protocol}${host}:${port}`);
 });
